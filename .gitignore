@@ -1,6 +1,9 @@
 # OS X
 .DS_Store
 
+# Frontend
+frontend/public/dist/
+
 # SDK
 sdk_tmp/
 email_creds.json
