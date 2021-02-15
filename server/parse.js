@@ -19,8 +19,9 @@ module.exports = function (got) {
     const {
       id,
       threadId,
+      hasAttachment,
       headers,
-      name,
+      isUnread,
       from,
       cc,
       bcc,
@@ -53,14 +54,15 @@ module.exports = function (got) {
     const key = `${threadId}/${id}`;
     const value = {
       id,
-      name,
+      hasAttachment,
+      isUnread,
       from,
       cc,
       bcc,
+      subject,
       date,
       body,
       headerData,
-      subject,
       threadId,
       wordCount,
     };
