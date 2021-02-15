@@ -25,9 +25,7 @@ export default class MyView extends SiftView {
     const { data } = value || {};
 
     render(
-      // <I18nextProvider i18n={i18n}>
       <App data={data} />,
-      // </I18nextProvider>,
       document.querySelector('#root')
     );
   }
