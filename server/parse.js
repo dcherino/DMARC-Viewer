@@ -31,12 +31,16 @@ module.exports = function (got) {
     } = emailJmap;
 
     // Headers
-    const dkim = headers["Authentication-Results"]
+    const dkimHeader = headers["Authentication-Results"]
       ? headers["Authentication-Results"].match(/(dkim=)\w+/g)
       : null;
-    const spf = headers["Authentication-Results"]
+    const spfHeader = headers["Authentication-Results"]
       ? headers["Authentication-Results"].match(/(spf=)\w+/g)
       : null;
+
+    const dkim = Array.isArray(dkimHeader) ? dkimHeader[0].split("=")[1] : dkimHeader;
+    const spf = Array.isArray(spfHeader) ? spfHeader[0].split("=")[1] : dkimHeader;
+
     const headerData = {
       DKIM: dkim,
       SPF: spf,
