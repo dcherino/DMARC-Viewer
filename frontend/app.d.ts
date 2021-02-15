@@ -1,0 +1,1 @@
+declare module '@redsift/sift-sdk-web';

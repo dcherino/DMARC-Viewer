@@ -1,12 +1,11 @@
 /* eslint no-console: 0 */
 
 import React from 'react';
-import { translate } from 'react-i18next';
-
+// import { translate } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 interface Message {
   subject: string;
 }
-
 interface Data {
   counts: {
     messageTotal: number;
@@ -15,13 +14,12 @@ interface Data {
   };
   messages: Array<Message>;
 }
-
 interface AppProps {
-  t: (param1: string, param2?: object) => string;
   data: Data;
 }
 
-const App = ({ t, data }: AppProps) => {
+const App = ({ data }: AppProps) => {
+  const { t } = useTranslation();
   const { counts, messages } = data;
   return (
     <div>
@@ -36,4 +34,4 @@ const App = ({ t, data }: AppProps) => {
   );
 };
 
-export default translate(['app'], { wait: true })(App);
+export default App;
