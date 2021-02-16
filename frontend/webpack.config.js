@@ -18,7 +18,7 @@ module.exports = {
     path: path.join(__dirname, 'public', 'dist', 'js'),
   },
   resolve: {
-    extensions: ['.ts', '.tsx','.js', '.jsx', '.json'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -34,15 +34,26 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader?cacheDirectory',
-        }
+        },
       },
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader?cacheDirectory'
-        }
+          loader: 'babel-loader?cacheDirectory',
+        },
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
       },
     ],
   },
@@ -51,5 +62,5 @@ module.exports = {
     fs: 'empty',
     net: 'empty',
     tls: 'empty',
-  }
+  },
 };
