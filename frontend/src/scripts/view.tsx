@@ -8,7 +8,7 @@ import { render } from 'react-dom';
 // import { I18nextProvider } from 'react-i18next';
 import './libs/i18n';
 
-import App from './components/App';
+import App from './components/App/App';
 
 export default class MyView extends SiftView {
   constructor() {
