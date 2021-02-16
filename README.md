@@ -1,6 +1,6 @@
 # Comments
 
-Please read my [comments](comments.md) about this technical test on the COMMENTS file.
+Please read my [comments](COMMENTS.md) about this technical test on the COMMENTS file.
 
 ## Red Sift React/DMARC Developer Exercise
 
