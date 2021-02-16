@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260.188" height="17.875" viewBox="0 0 260.188 17.875">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+        opacity: 0.2;
+        mix-blend-mode: overlay;
+      }
+    </style>
+  </defs>
+  <path id="Curve_copy_3" data-name="Curve copy 3" class="cls-1" d="M231.411,263.024l11.286,1,9.876-2,9.876,2,9.875-3,9.876-3.006,9.876,5.009,9.875-8.014L311.827,250l9.876,11.02,8.464,3,11.287,2,9.876-6.01,9.875,3,9.876-5.009,9.876,3.006,9.875,4.007,9.876-1,9.876,2,9.875-13.022,8.465,9.015,11.287-2,8.465,4.007,9.875,1,11.287-4.007,9.875-4.007,9.876,8.014" transform="translate(-230.406 -249.125)"/>
+</svg>
