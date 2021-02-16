@@ -18,6 +18,7 @@ export interface Message {
   bcc: Array<Emailer> | null;
   subject: string;
   date: string;
+  preview: string;
   body: string;
 }
 
