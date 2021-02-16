@@ -1,4 +1,8 @@
-# Red Sift React/DMARC Developer Exercise
+# Comments
+
+Please read my [comments](comments.md) about this technical test on the COMMENTS file.
+
+## Red Sift React/DMARC Developer Exercise
 
 Your task is to build your first [sift](https://docs.redsift.com/docs/intro-system-overview).
 
