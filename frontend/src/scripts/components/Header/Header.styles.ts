@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.header`
     font-size: 1.4rem;
     color: #555;
     font-weight: 400;
+    margin: 0;
   }
 `;
 
@@ -16,4 +17,7 @@ export const TopBar = styled.div`
   border-bottom: 1px solid #e4e6e7;
   box-shadow: 0px 3px 8px #eceeef;
   padding: 0 2rem;
+  height: 58px;
+  display: flex;
+  align-items: center;
 `;
