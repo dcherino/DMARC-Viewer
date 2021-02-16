@@ -1,16 +1,27 @@
-interface From {
+interface Emailer {
   email: string;
   name: string;
 }
 
-interface Message {
-  body: string;
-  date: string;
-  from: From;
+interface Headers {
+  DKIM: 'pass' | null;
+  SPF: 'pass' | null;
+}
+export interface Message {
+  id: string;
+  headerData: Headers;
+  hasAttachment: boolean;
+  isUnread: boolean;
+  from: Emailer | null;
+  to: Array<Emailer> | null;
+  cc: Array<Emailer> | null;
+  bcc: Array<Emailer> | null;
   subject: string;
+  date: string;
+  body: string;
 }
 
-interface Data {
+export interface Data {
   counts: {
     messageTotal: number;
     wordTotal: number;
