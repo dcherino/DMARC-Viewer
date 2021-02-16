@@ -8,6 +8,7 @@ import { GridContainer } from './App.styles';
 import Title from '../Title/Title';
 import Footer from '../Footer/Footer';
 import Analytics from '../Analytics/Analytics';
+import Chart from '../Chart/Chart';
 
 const App = ({ data }: AppProps) => {
   return (
@@ -15,6 +16,7 @@ const App = ({ data }: AppProps) => {
       <Header />
       <Title counts={data.counts} />
       <Analytics data={data} />
+      <Chart data={data} />
       <EmailList data={data} />
       <Footer />
     </GridContainer>
