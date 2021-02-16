@@ -27,6 +27,7 @@ module.exports = function (got) {
       bcc,
       subject,
       date,
+      preview,
       textBody,
       strippedHtmlBody,
     } = emailJmap;
@@ -61,6 +62,7 @@ module.exports = function (got) {
       bcc,
       subject,
       date,
+      preview,
       body,
       headerData,
       threadId,
